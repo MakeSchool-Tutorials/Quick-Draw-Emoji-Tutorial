@@ -46,10 +46,10 @@ Along the way and at the end of the tutorial, you can push yourself by tackling 
 > [info]
 >Along the way you’ll get hands-on practice with core concepts of Machine Learning:
 >
-> - 1) gathering data 📝
-> - 2) cleaning and formatting the data 🧹
-> - 3) training the model 🏋️‍♀️
-> - 4) using the trained model to make predictions 🔮
+> 1. gathering data 📝
+> 1. cleaning and formatting the data 🧹
+> 1. training the model 🏋️‍♀️
+> 1. using the trained model to make predictions 🔮
 
 By the end, you'll have your own live interactive Machine Learning website that you can show off to friends and family.
 

@@ -44,7 +44,7 @@ First, this function accesses the global variables `model, training_features, tr
 
 The most important line is `model = model.fit(training_features,training_labels)`. The `fit` function takes our two data lists of features and labels and uses it to train the model. Internally you can think of the model creating a flowchart that it can use to guess the right label.
 
-After the model has been trained, it adds some information to `training_summary` about the **depth** and **number of leaves** of the tree - concepts we'll cover in more detail in the _Prediction_ step.
+After the model has been trained, it adds some information to `training_summary` about the **depth** and **number of leaves** of the tree - concepts we'll cover in more detail in the _Concept Review_.
 
 ## Check
 

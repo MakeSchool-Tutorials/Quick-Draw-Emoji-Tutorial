@@ -154,13 +154,13 @@ Take a moment to check your code so far.
 >    text.close()
 >    return True
 >
-># # TODO: add the delete_samples() function here
+># TODO: add the delete_samples() function here
 >def delete_samples():
 >  open("samples.txt", "w").close()
 >  return True
 >
 ># ### DATA FORMATTING ###
-># # TODO: add the load_training_data() function here
+># TODO: add the load_training_data() function here
 >def load_training_data():
 >  global training_features, training_labels
 >  training_features = []
@@ -180,7 +180,7 @@ Take a moment to check your code so far.
 >  # print(sample_counts)
 >  return sample_counts
 >
-># # TODO: add the flatten_list(list_2d) function here
+># TODO: add the flatten_list(list_2d) function here
 >def flatten_list(list_2d):
 >  flat_list = []
 >  for sublist in list_2d:

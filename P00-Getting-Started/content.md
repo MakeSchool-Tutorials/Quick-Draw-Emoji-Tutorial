@@ -77,7 +77,7 @@ This tutorial does not cover working with GitHub or getting set up for local dev
 > [action]
 > In a new window, go to [Quick-Draw-Emoji-Starter on GitHub](https://github.com/MakeSchool-Tutorials/Quick-Draw-Emoji-Starter)
 
-# Project Introduction
+# Project Overview
 
 When you first run the program you should see that right now it just has a simple webpage with a drawing canvas and a clear button. This will be where you'll draw the emojis that you want to train and make predictions from.
 
@@ -105,9 +105,11 @@ samples.txt
 
 All of the work you'll do in this tutorial will be inside of `app/model.py` and require only a basic familiarity with programming to complete the project and gain an initial understanding of Machine Learning. Even if you are not already familiar with Python, the syntax will be easy to pick up as you go.
 
-The full program consists of a Flask Python server as the backend, an interactive drawing canvas using JavaScript and the p5.js library, and the sklean Python library for the Machine Learning functionality. More experienced programmers can dive into those parts of code in the stretch challenges at the end of the tuturial.
+The full program consists of a Flask Python server as the backend, an interactive drawing canvas using JavaScript and the p5.js library, and the sklearn Python library for the Machine Learning functionality. More experienced programmers can dive into those parts of code in the stretch challenges at the end of the tuturial.
 
-## `app/model.py`
+## File Descriptions
+
+### app/model.py
 
 ```python
 ### IMPORT HELPERS ###
@@ -143,7 +145,7 @@ from sklearn import tree
 
 Other files are briefly explained below for those who are interested in a deeper understanding of the overall program structure, but optional for the purpose of this tutorial. The rest of the project is already setup to correctly import and use the logic that you'll be adding here.
 
-## `main.py`
+### main.py
 
 ```python
 from app import app
@@ -157,11 +159,11 @@ The first line loads in the files from the `/app` folder.
 The `if` statement checks if this is the main file, and if so, calls `app.run` which then calls `app/__init__.py`.
 
 
-## `app/static` and `app/templates`
+### app/static and app/templates
 
 These folders contain the HTML, CSS, and JavaScript code that handles the visual display and user interactions of the website.
 
-## `app/__init__.py`
+### app/__init__.py
 
 ```python
 from flask import Flask
@@ -171,7 +173,7 @@ from app import routes
 ```
 This code imports the Flask library, creates a new Flask server instance, and then imports the routes (from `routes.py`).
 
-## `app/routes.py`
+### app/routes.py
 
 ```python
 from flask import request, render_template, jsonify
@@ -186,7 +188,7 @@ This file defines the urls that can be accessed and defines what is returned to 
 The top of the file imports helper functions from the Flask library. The second line loads the app folder so that line 3 can access the contents of `app/model.py` and load all of the code within it.
 
 
-## `requirements.txt`
+### requirements.txt
 
 ```
 Flask==1.0.2
@@ -195,17 +197,19 @@ sklearn==0.0
 
 These tell the program which version numbers to use when importing the python libraries.
 
-## `samples.txt`
+### samples.txt
 
 Starts out as a totally empty file. This is where the data submitted by the user will be stored. Then the data will be loaded, formatted, and used to train the Machine Learning model.
 
 # Add Your Name
 
-You're about to build out an awesome Machine Learning project that you can share with friends and family - let's be sure to put your name on it!
+We're about to build out an awesome Machine Learning project that you can share with friends and family - let's be sure to get your name on it!
 
 > [action]
+>
 > 1. Inside of `model.py` find where it says `# TODO: add global display variables here`
 > 1. Add a global variable called `created_by` and set it equal to your name: `created_by = "YOURNAME"`
+>
 
 ## Check
 
@@ -213,4 +217,4 @@ Re-run the program and see that your name now appears at the top.
 
 <!-- TODO: image of name added -->
 
-PS - Don't worry, we'll be adding custom CSS later to improve the overall style of the webpage :)
+*PS - Don't worry, we'll be adding custom CSS later to improve the overall style of the webpage :)*

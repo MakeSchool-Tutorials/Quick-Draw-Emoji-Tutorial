@@ -11,12 +11,14 @@ Even in this project however, we need to do a little data formatting to ensure t
 >
 > - **1D Arrays** are the typical basic list, a single list of many objects: like `[0, 1, 2, 3, 4]` or `["hello", "world"]`
 > - **2D Arrays** are lists that contain lists: `[[0, 1, 2], [3, 4, 5]]`
+>
 > 2D arrays are a common way of representing grid information, with the first indices representing the column, and the second representing the row:
->```python
-> grid_array = [["Column 0, Row 0", "Column 0, Row 1"],["Column 1, Row 0", "Column 1, Row 1"]]
-> print(grid_array[0][0]) // prints "Column 0, Row 0"
-> print(grid_array[1][0]) // prints "Column 1, Row 0"
->```
+>
+```python
+grid_array = [["Column 0, Row 0", "Column 0, Row 1"],["Column 1, Row 0", "Column 1, Row 1"]]
+print(grid_array[0][0]) // prints "Column 0, Row 0"
+print(grid_array[1][0]) // prints "Column 1, Row 0"
+```
 >
 
 We need to create a helper function that will "flatten" 2D arrays, to convert them so that all of the values are kept in order, but removed from the inner lists: from this `[[0, 1, 2], [3, 4, 5]]` to this `[0, 1, 2, 3, 4, 5]`
@@ -25,14 +27,14 @@ We need to create a helper function that will "flatten" 2D arrays, to convert th
 >
 > In `model.py`, find where it says `# TODO: add the flatten_list(list_2d) function here`, and on a new line underneath, add the following code:
 >
->```python
-> def flatten_list(list_2d):
->   flat_list = []
->   for sublist in list_2d:
->     for item in sublist:
->       flat_list.append(item)
->   return flat_list
->```
+```python
+def flatten_list(list_2d):
+  flat_list = []
+  for sublist in list_2d:
+    for item in sublist:
+      flat_list.append(item)
+  return flat_list
+```
 >
 
 In the next step, we'll use this helper to reformat and save the data so that we can train a Machine Learning model with it.
@@ -51,11 +53,11 @@ First, expand the console by expanding the bottom panel of the results window.
 >
 > In `model.py`, right below where you just added the `flatten_list(list_2d)` function, add the following code:
 >
->```python
-> example_list = [["a", "b", "c"],["d", "e", "f"]]
-> print(example_list)
-> print(flatten_list(example_list))
->```
+```python
+example_list = [["a", "b", "c"],["d", "e", "f"]]
+print(example_list)
+print(flatten_list(example_list))
+```
 >
 
 In the console, you can click the "Clear" button (⌫) to erase previous data. Re-run the program, then scroll up to the top. You should see your print statements near the top, like this:
@@ -72,10 +74,10 @@ Now that we can convert 2D to 1D lists, it's time to load the data from `samples
 >
 > In `model.py`, find `# TODO: add machine learning variables here`, and add the following new global variables beneath it:
 >
->```python
-> training_features = []
-> training_labels = []
->```
+```python
+training_features = []
+training_labels = []
+```
 >
 
 We are making and using global variables so that we can use `load_training_data()` to format and save the current samples to them and have a separate function that is responsible for using the loaded training data to train the model.
@@ -84,25 +86,25 @@ We are making and using global variables so that we can use `load_training_data(
 >
 > In `model.py`, find `# TODO: add the load_training_data() function here`, and add the following code:
 >
->```python
-> def load_training_data():
->   global training_features, training_labels
->   training_features = []
->   training_labels = []
->   sample_counts = {}
+```python
+def load_training_data():
+  global training_features, training_labels
+  training_features = []
+  training_labels = []
+  sample_counts = {}
 >
->   text=open("samples.txt", "r")
->   lines = text.readlines()
->   for line in lines:
->     data = json.loads(line)
->     label = data["label"]
->     features = flatten_list(data["features"])
->     training_labels.append(label)
->     training_features.append(features)
->     sample_counts[label] = sample_counts.get(label, 0) + 1
+  text=open("samples.txt", "r")
+  lines = text.readlines()
+  for line in lines:
+    data = json.loads(line)
+    label = data["label"]
+    features = flatten_list(data["features"])
+    training_labels.append(label)
+    training_features.append(features)
+    sample_counts[label] = sample_counts.get(label, 0) + 1
 >
->   return sample_counts
->```
+  return sample_counts
+```
 >
 
 This is our largest function so far, and it's doing several important steps:
@@ -161,7 +163,7 @@ Take a moment to check your code so far.
 >   open("samples.txt", "w").close()
 >   return True
 >
-> # ### DATA FORMATTING ###
+> ### DATA FORMATTING ###
 > # TODO: add the load_training_data() function here
 > def load_training_data():
 >   global training_features, training_labels
@@ -194,7 +196,7 @@ Take a moment to check your code so far.
 > # print(example_list)
 > # print(flatten_list(example_list))
 >
-> #### MODEL TRAINING ###
+> ### MODEL TRAINING ###
 > # TODO: add the update_training() function here
 >
 > ### MODEL PREDICTION ###

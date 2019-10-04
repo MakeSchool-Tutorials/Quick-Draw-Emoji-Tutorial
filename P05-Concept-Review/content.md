@@ -30,7 +30,7 @@ In this tutorial, you've demonstrated the fundamental building blocks of Machine
 Want to view the full project solution?
 
 > [solution]
-> View at [Quick Draw Emoji Solution](https://repl.it/@MakeSchoolRAMP/QuickDrawEmojiSolution) TODO
+> View at [Quick Draw Emoji Solution](https://repl.it/@MakeSchoolRAMP/QuickDrawEmojiSolution)
 
 Best of luck in your future Machine Learning adventures!
 

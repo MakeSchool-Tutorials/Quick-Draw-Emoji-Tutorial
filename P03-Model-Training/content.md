@@ -25,19 +25,19 @@ This creates a new global variable `model` that contains a new `DecisionTreeClas
 >
 > In `model.py`, go to the `# TODO: add the update_training() function here`, and on a new line add:
 >
->```python
-> def update_training():
->   global model, training_features, training_labels
->   training_summary = {}
->   try:
->     model = model.fit(training_features,training_labels)
->     training_summary["tree_depth"] = int(model.get_depth());
->     training_summary["tree_leaves"] = int(model.get_n_leaves());
+```python
+def update_training():
+  global model, training_features, training_labels
+  training_summary = {}
+  try:
+    model = model.fit(training_features,training_labels)
+    training_summary["tree_depth"] = int(model.get_depth());
+    training_summary["tree_leaves"] = int(model.get_n_leaves());
 >
->     return training_summary
->   except:
->     return False
->```
+    return training_summary
+  except:
+    return False
+```
 >
 
 First, this function accesses the global variables `model, training_features, training_labels` and creates a new dictionary `training_summary` to hold information that will be returned to update the webpage.
@@ -90,7 +90,7 @@ Take a moment to check your code so far.
 >   open("samples.txt", "w").close()
 >   return True
 >
-> # ### DATA FORMATTING ###
+> ### DATA FORMATTING ###
 > # TODO: add the load_training_data() function here
 > def load_training_data():
 >   global training_features, training_labels
@@ -123,7 +123,7 @@ Take a moment to check your code so far.
 > # print(example_list)
 > # print(flatten_list(example_list))
 >
-> #### MODEL TRAINING ###
+> ### MODEL TRAINING ###
 > # TODO: add the update_training() function here
 > def update_training():
 >   global model, training_features, training_labels

@@ -38,16 +38,16 @@ When the user clicks a "submit" button, it sends a **POST** request to the `/tra
 >
 > In `model.py`, find where it says `# TODO: add the save_sample(data) function here`, and on a new line underneath, add the following code:
 >
->```python
-> def save_sample(data):
->   if "label" in data.keys() and "features" in data.keys():
->     sample = {"label": data["label"], "features":data["features"]}
->     data_string = json.dumps(sample)
->     text = open("samples.txt","a+")
->     text.write(f'{data_string}\n')
->     text.close()
->     return True
->```
+```python
+def save_sample(data):
+  if "label" in data.keys() and "features" in data.keys():
+    sample = {"label": data["label"], "features":data["features"]}
+    data_string = json.dumps(sample)
+    text = open("samples.txt","a+")
+    text.write(f'{data_string}\n')
+    text.close()
+    return True
+```
 >
 
 The `if` statement checks first that we are getting the `label` and `features` information that we need, then creates a dictionary with just those two piece of information (to avoid storing other infomation in the JSON request that we don't want to use for training). That dictionary is converted to a string (`data_string`).
@@ -85,11 +85,11 @@ But as a website user, if you press the "Delete" button right now nothing happen
 >
 > In `model.py`, find where it says `# TODO: add the delete_samples() function here`, and on a new line underneath, add the following code:
 >
->```python
-> def delete_samples():
->   open("samples.txt", "w").close()
->   return True
->```
+```python
+def delete_samples():
+  open("samples.txt", "w").close()
+  return True
+```
 >
 
 This simple function opens `samples.txt` in **write** mode (`w`) and then immediately closes it, which has the effect of over-writting the previous data and saving it as an empty file. Again, we return `True` to indicate successful completion.

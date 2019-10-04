@@ -64,7 +64,7 @@ Where will you actually write the code? There are two options for getting the st
 Repl.it is a website makes it easy to jump right in to programming without having to set up a local environment. Whether you are a beginning or advanced programmer, it's a great way to jump right into the code.
 
 > [action]
-> In a new window, go to [QuickDrawEmojiTutorial on Repl.it](https://repl.it/@MakeSchoolRAMP/QuickDrawEmojiTutorial)
+> In a new window, go to [QuickDrawEmojiTutorial on Repl.it](http://make.sc/quick-draw-emoji)
 
 <!-- ### Repl.it Interface Overview -->
 

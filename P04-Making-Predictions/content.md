@@ -9,16 +9,16 @@ The last missing piece is to now *use* our training Machine Learning model to st
 >
 > In `model.py`, go to the `# TODO: add the predict(data) function here`, and on a new line add:
 >
->```python
-> def predict(data):
->   global model
->   try:
->     features = flatten_list(data["features"])
->     guess = model.predict([features])
->     return { "guess": guess[0] }
->   except:
->     return None
->```
+```python
+def predict(data):
+  global model
+  try:
+    features = flatten_list(data["features"])
+    guess = model.predict([features])
+    return { "guess": guess[0] }
+  except:
+    return None
+```
 >
 
 The three important steps here are:
@@ -47,13 +47,16 @@ Now that we know all the key steps are working, it's time to add more possible e
 
 Re-run the program. You should now see a separate "Submit" button for each of your emojis. Now as you draw and submit different emojis, you can start to see how the Machine Learning model performs with multiple possible options.
 
+Adding and training new emoji:
+
 ![more emoji added](assets/more_emoji_added.png "more emoji added")
 ![train next emoji](assets/train_next_emoji.png "train next emoji")
 ![draw next emoji](assets/draw_next_emoji.png "draw next emoji")
 
-Are you feeling like a master of Machine Learning yet? 😎
+Live predictions change as the model trains on more and more diverse sample data:
 
 ![draw third emoji](assets/draw_third_emoji.png "draw third emoji")
 ![draw third emoji 2](assets/draw_third_emoji_2.png "draw third emoji 2")
 ![live prediction](assets/live_prediction_1.png "live prediction")
 
+Are you feeling like a master of Machine Learning yet? 😎

@@ -59,7 +59,7 @@ By the end, you'll have your own live interactive Machine Learning website that 
 
 Where will you actually write the code? There are two options for getting the starter project.
 
-## Best Option - Use repl.it
+<!-- ## Best Option - Use repl.it -->
 
 Repl.it is a website makes it easy to jump right in to programming without having to set up a local environment. Whether you are a beginning or advanced programmer, it's a great way to jump right into the code.
 
@@ -70,12 +70,12 @@ Repl.it is a website makes it easy to jump right in to programming without havin
 
 <!-- TODO: Screenshot and overview of navigating repl.it project -->
 
-## Alternate Option - Use GitHub
+<!-- ## Alternate Option - Use GitHub -->
 
-This tutorial does not cover working with GitHub or getting set up for local development of web projects, but if those are things you are already comfortable with, you can clone the starter project from GitHub.
+<!-- This tutorial does not cover working with GitHub or getting set up for local development of web projects, but if those are things you are already comfortable with, you can clone the starter project from GitHub. -->
 
-> [action]
-> In a new window, go to [Quick-Draw-Emoji-Starter on GitHub](https://github.com/MakeSchool-Tutorials/Quick-Draw-Emoji-Starter)
+<!-- > [action]
+> In a new window, go to [Quick-Draw-Emoji-Starter on GitHub](https://github.com/MakeSchool-Tutorials/Quick-Draw-Emoji-Starter) -->
 
 # Project Overview
 

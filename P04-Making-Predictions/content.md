@@ -10,14 +10,14 @@ The last missing piece is to now *use* our training Machine Learning model to st
 > In `model.py`, go to the `# TODO: add the predict(data) function here`, and on a new line add:
 >
 >```python
->def predict(data):
->  global model
->  try:
->    features = flatten_list(data["features"])
->    guess = model.predict([features])
->    return { "guess": guess[0] }
->  except:
->    return None
+> def predict(data):
+>   global model
+>   try:
+>     features = flatten_list(data["features"])
+>     guess = model.predict([features])
+>     return { "guess": guess[0] }
+>   except:
+>     return None
 >```
 >
 
@@ -40,7 +40,8 @@ Did you notice that the predictions right now are 100% correct? That's because r
 Now that we know all the key steps are working, it's time to add more possible emoji options.
 
 > [action]
-> In `model.py`, go back to `### CUSTOM DISPLAY VARIABLES ###`, and add more emojis to the `learn_emojis` list: `learn_emoji = ["🙂", "🌈", "💎"]`
+> In `model.py`, go back to `### CUSTOM DISPLAY VARIABLES ###`, and add more emojis to the `learn_emojis` list:
+> `learn_emoji = ["🙂", "🌈", "💎"]`
 
 ## Check
 

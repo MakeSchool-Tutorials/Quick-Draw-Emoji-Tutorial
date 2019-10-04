@@ -9,8 +9,8 @@ In Machine Learning, the 2 pieces of data that we need are **labels** and **feat
 
 > [info]
 >
-> 1. **Labels** are the names or result types you want your Machine Learning model to be able to predict: such as animal species ("bird" or "insect"), what to wear ("shorts", "sweater", or "rain jacket"), and so on
-> 1. **Features** are the other information you have that you want the Machine Learning model to learn about and associate with labels: such as physical properties ("can fly", "number of eyes", "weight"), weather data ("amount of rain", "temperature", "time of year") , or many other things
+> - **Labels** are the names or result types you want your Machine Learning model to be able to predict: such as animal species ("bird" or "insect"), what to wear ("shorts", "sweater", or "rain jacket"), and so on
+> - **Features** are the other information you have that you want the Machine Learning model to learn about and associate with labels: such as physical properties ("can fly", "number of eyes", "weight"), weather data ("amount of rain", "temperature", "time of year") , or many other things
 >
 
 In this project, the labels we'll be using are emoji and the features we'll train the model with are the canvas drawings.
@@ -18,7 +18,9 @@ In this project, the labels we'll be using are emoji and the features we'll trai
 Time to add a way for the user to indicate which emoji (**label**) they are drawing on the canvas.
 
 > [action]
-> On a new line under where you added `created_by`, add a new global variable called `learn_emoji` and set it equal to an array with a single string inside of it, with the emoji of your choice. Example: `learn_emoji = ["🙂"]`
+> On a new line under where you added `created_by`, add a new global variable called `learn_emoji` and set it equal to an array with a single string inside of it, with the emoji of your choice.
+> Example: `learn_emoji = ["🙂"]`
+>
 
 ## Check
 
@@ -37,14 +39,14 @@ When the user clicks a "submit" button, it sends a **POST** request to the `/tra
 > In `model.py`, find where it says `# TODO: add the save_sample(data) function here`, and on a new line underneath, add the following code:
 >
 >```python
->def save_sample(data):
->  if "label" in data.keys() and "features" in data.keys():
->    sample = {"label": data["label"], "features":data["features"]}
->    data_string = json.dumps(sample)
->    text = open("samples.txt","a+")
->    text.write(f'{data_string}\n')
->    text.close()
->    return True
+> def save_sample(data):
+>   if "label" in data.keys() and "features" in data.keys():
+>     sample = {"label": data["label"], "features":data["features"]}
+>     data_string = json.dumps(sample)
+>     text = open("samples.txt","a+")
+>     text.write(f'{data_string}\n')
+>     text.close()
+>     return True
 >```
 >
 
@@ -84,9 +86,9 @@ But as a website user, if you press the "Delete" button right now nothing happen
 > In `model.py`, find where it says `# TODO: add the delete_samples() function here`, and on a new line underneath, add the following code:
 >
 >```python
->def delete_samples():
->  open("samples.txt", "w").close()
->  return True
+> def delete_samples():
+>   open("samples.txt", "w").close()
+>   return True
 >```
 >
 
@@ -101,44 +103,44 @@ Take a moment to check your code so far.
 > [solution]
 >
 >```python
->### IMPORT HELPERS ###
->import json
->from sklearn import tree
+> ### IMPORT HELPERS ###
+> import json
+> from sklearn import tree
 >
->### CUSTOM DISPLAY VARIABLES ###
-># TODO: add global display variables here
->created_by = "Jordan"
->learn_emoji = ["🙂"]
+> ### CUSTOM DISPLAY VARIABLES ###
+> # TODO: add global display variables here
+> created_by = "Jordan"
+> learn_emoji = ["🙂"]
 >
->### MACHINE LEARNING MODEL VARIABLES ###
-># TODO: add machine learning variables here
+> ### MACHINE LEARNING MODEL VARIABLES ###
+> # TODO: add machine learning variables here
 >
->### DATA COLLECTION ###
-># TODO: add the save_sample(data) function here
->def save_sample(data):
->  if "label" in data.keys() and "features" in data.keys():
->    sample = {"label": data["label"], "features":data["features"]}
->    data_string = json.dumps(sample)
->    text = open("samples.txt","a+")
->    text.write(f'{data_string}\n')
->    text.close()
->    return True
+> ### DATA COLLECTION ###
+> # TODO: add the save_sample(data) function here
+> def save_sample(data):
+>   if "label" in data.keys() and "features" in data.keys():
+>     sample = {"label": data["label"], "features":data["features"]}
+>     data_string = json.dumps(sample)
+>     text = open("samples.txt","a+")
+>     text.write(f'{data_string}\n')
+>     text.close()
+>     return True
 >
-># TODO: add the delete_samples() function here
->def delete_samples():
->  open("samples.txt", "w").close()
->  return True
+> # TODO: add the delete_samples() function here
+> def delete_samples():
+>   open("samples.txt", "w").close()
+>   return True
 >
->### DATA FORMATTING ###
-># TODO: add the load_training_data() function here
+> ### DATA FORMATTING ###
+> # TODO: add the load_training_data() function here
 >
-># TODO: add the flatten_list(list_2d) function here
+> # TODO: add the flatten_list(list_2d) function here
 >
->#### MODEL TRAINING ###
-># TODO: add the update_training() function here
+> #### MODEL TRAINING ###
+> # TODO: add the update_training() function here
 >
->### MODEL PREDICTION ###
-># TODO: add the predict(data) function here
+> ### MODEL PREDICTION ###
+> # TODO: add the predict(data) function here
 >
 >```
 >

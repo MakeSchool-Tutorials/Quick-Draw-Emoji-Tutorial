@@ -8,6 +8,7 @@ It's very normal when working with Machine Learning that you will be using data 
 Even in this project however, we need to do a little data formatting to ensure that our Machine Learning model performs well. So far we are storing raw data that pairs emoji labels (strings) with drawing features (2D arrays). The string emoji labels are already good to go, but we need to convert the 2D array into a 1D array.
 
 > [info]
+>
 > - **1D Arrays** are the typical basic list, a single list of many objects: like `[0, 1, 2, 3, 4]` or `["hello", "world"]`
 > - **2D Arrays** are lists that contain lists: `[[0, 1, 2], [3, 4, 5]]`
 > 2D arrays are a common way of representing grid information, with the first indices representing the column, and the second representing the row:
@@ -21,7 +22,9 @@ Even in this project however, we need to do a little data formatting to ensure t
 We need to create a helper function that will "flatten" 2D arrays, to convert them so that all of the values are kept in order, but removed from the inner lists: from this `[[0, 1, 2], [3, 4, 5]]` to this `[0, 1, 2, 3, 4, 5]`
 
 > [action]
+>
 > In `model.py`, find where it says `# TODO: add the flatten_list(list_2d) function here`, and on a new line underneath, add the following code:
+>
 >```python
 >def flatten_list(list_2d):
 >  flat_list = []
@@ -45,7 +48,9 @@ First, expand the console by expanding the bottom panel of the results window.
 ![python console open](assets/python_console_open.png "python console open")
 
 > [action]
+>
 > In `model.py`, right below where you just added the `flatten_list(list_2d)` function, add the following code:
+>
 >```python
 >example_list = [["a", "b", "c"],["d", "e", "f"]]
 >print(example_list)
@@ -54,25 +59,19 @@ First, expand the console by expanding the bottom panel of the results window.
 >
 
 In the console, you can click the "Clear" button (⌫) to erase previous data. Re-run the program, then scroll up to the top. You should see your print statements near the top, like this:
-```
-Python 3.7.4 (default, Jul  9 2019, 00:06:43)
-[GCC 6.3.0 20170516] on linux
-[['a', 'b', 'c'], ['d', 'e', 'f']]
-['a', 'b', 'c', 'd', 'e', 'f']
- * Serving Flask app "app" (lazy loading)
- * Environment: production
-```
-
-Once you have confirmed that it is working correctly, you can comment out or remove `example_list` and the print statements in `model.py`.
 
 ![check flatten list](assets/check_flatten_list_console.png "check flatten list")
+
+Once you have confirmed that it is working correctly, you can comment out or remove `example_list` and the print statements in `model.py`.
 
 # Prepare Data for Model Training
 
 Now that we can convert 2D to 1D lists, it's time to load the data from `samples.txt` and put it into two separate lists - one for the labels and one for the features.
 
 > [action]
+>
 > In `model.py`, find `# TODO: add machine learning variables here`, and add the following new global variables beneath it:
+>
 >```python
 >training_features = []
 >training_labels = []
@@ -82,7 +81,9 @@ Now that we can convert 2D to 1D lists, it's time to load the data from `samples
 We are making and using global variables so that we can use `load_training_data()` to format and save the current samples to them and have a separate function that is responsible for using the loaded training data to train the model.
 
 > [action]
+>
 > In `model.py`, find `# TODO: add the load_training_data() function here`, and add the following code:
+>
 >```python
 >def load_training_data():
 >  global training_features, training_labels
@@ -116,9 +117,10 @@ This is our largest function so far, and it's doing several important steps:
 Until we complete the training step, we won't see the webpage update using the `sample_counts` information, but we can use another `print` statement to help us confirm that things are working correctly before we move on.
 
 > [action]
+>
 > In `model.py`, where you just added the `load_training_data()` function, add `print(sample_counts)` on the line **before** the last line `return sample_counts`.
 
-Ensure that you have some data in `samples.txt` and re-run the program. Look in the python console to see if the print statement shows the correct number of samples.
+Ensure that you have some data in `samples.txt` and re-run the program. Look in the python console to see if the print statement shows the correct number of samples each time you click "Submit".
 
 ![sample count in console](assets/sample_count_console.png "sample count in console")
 

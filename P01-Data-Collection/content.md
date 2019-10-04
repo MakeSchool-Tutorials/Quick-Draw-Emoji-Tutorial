@@ -8,8 +8,10 @@ An essential part of doing Machine Learning is that you first need some data, so
 In Machine Learning, the 2 pieces of data that we need are **labels** and **features**.
 
 > [info]
+>
 > 1. **Labels** are the names or result types you want your Machine Learning model to be able to predict: such as animal species ("bird" or "insect"), what to wear ("shorts", "sweater", or "rain jacket"), and so on
 > 1. **Features** are the other information you have that you want the Machine Learning model to learn about and associate with labels: such as physical properties ("can fly", "number of eyes", "weight"), weather data ("amount of rain", "temperature", "time of year") , or many other things
+>
 
 In this project, the labels we'll be using are emoji and the features we'll train the model with are the canvas drawings.
 
@@ -31,7 +33,9 @@ If you click the *Submit* button right now nothing happens. We need to add some 
 When the user clicks a "submit" button, it sends a **POST** request to the `/train` endpoint passing in the emoji (**label**) and a 2D array (an array of arrays) representing the values of the grid on the canvas (**features**). The `/train` endpoint then tries to send the data through to a function called `save_sample(data)` - let's implement that function now.
 
 > [action]
+>
 > In `model.py`, find where it says `# TODO: add the save_sample(data) function here`, and on a new line underneath, add the following code:
+>
 >```python
 >def save_sample(data):
 >  if "label" in data.keys() and "features" in data.keys():
@@ -76,7 +80,9 @@ Now that you know where the data is being saved, you can manually remove some or
 But as a website user, if you press the "Delete" button right now nothing happens. Let's fix that.
 
 > [action]
+>
 > In `model.py`, find where it says `# TODO: add the delete_samples() function here`, and on a new line underneath, add the following code:
+>
 >```python
 >def delete_samples():
 >  open("samples.txt", "w").close()
@@ -122,5 +128,17 @@ Take a moment to check your code so far.
 >def delete_samples():
 >  open("samples.txt", "w").close()
 >  return True
+>
+>### DATA FORMATTING ###
+># TODO: add the load_training_data() function here
+>
+># TODO: add the flatten_list(list_2d) function here
+>
+>#### MODEL TRAINING ###
+># TODO: add the update_training() function here
+>
+>### MODEL PREDICTION ###
+># TODO: add the predict(data) function here
+>
 >```
 >

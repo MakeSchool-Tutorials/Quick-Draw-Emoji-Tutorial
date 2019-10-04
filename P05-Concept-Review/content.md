@@ -52,8 +52,8 @@ Further customize your project's appearance by updating the CSS rules in `styles
 
 # Challenge
 
-Come up with your own totally unique customization of the Code Wizard Castle and share it with us!
+Come up with your own totally unique customization of Quick Draw Emoji and share it with us!
 
-Send us a link to your custom code and a short description of your changes: [Email Us](make.sc/hoc_custom)
+Send us a link to your custom code and a short description of your changes: [Email Us](mailto:hello@makeschool.com)
 
-We can't wait to see what you'll create!
+We can't wait to see what you'll create! 🚀

@@ -6,7 +6,9 @@ slug: making-predictions
 The last missing piece is to now *use* our training Machine Learning model to start making predictions about new emoji drawings.
 
 > [action]
+>
 > In `model.py`, go to the `# TODO: add the predict(data) function here`, and on a new line add:
+>
 >```python
 >def predict(data):
 >  global model
@@ -20,6 +22,7 @@ The last missing piece is to now *use* our training Machine Learning model to st
 >
 
 The three important steps here are:
+
 1. getting the feature information from the passed in data, using our `flatten_list` helper to convert it to a 1D array
 1. passing in the formatted `features` to the `model.predict` function
 1. saving and returning the resulting `guess` so that the webpage can display the results

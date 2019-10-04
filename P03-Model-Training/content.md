@@ -14,6 +14,7 @@ A decision tree / flow chart helps to quickly narrow down options and arrive at 
 If you take a look at the top of `model.py` you'll see that it's already using the `sklearn` library and importing the `tree` feature.
 
 > [action]
+>
 > In `model.py`, return to the `### MACHINE LEARNING MODEL VARIABLES ###` section, and on a new line underneath the two training data lists, add `model = tree.DecisionTreeClassifier()`
 
 This creates a new global variable `model` that contains a new `DecisionTreeClassifier` type of machine learning model. Right now it's just a blank new model - we still need to train it.
@@ -21,7 +22,9 @@ This creates a new global variable `model` that contains a new `DecisionTreeClas
 # Train the Model
 
 > [action]
+>
 > In `model.py`, go to the `# TODO: add the update_training() function here`, and on a new line add:
+>
 >```python
 >def update_training():
 >  global model, training_features, training_labels

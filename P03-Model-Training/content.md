@@ -5,16 +5,13 @@ slug: model-training
 
 We finally have the pieces completed to be able to collect, store, format, and prepare the data for use by a Machine Learning model. Now we can start putting all that hard work to use.
 
-For this project, we'll be using a **Decision Tree**. You don't need to fully understand how they work inside of the Machine Learning model to be able to use them, but one way to think about it is to compare it to a flow chart for how you might try to guess the answer in a game of 20 questions.
+For this project, we'll be using a **Decision Tree**. You don't need to fully understand how they work inside of the Machine Learning model to be able to use them, but one way to think about it is to compare it to a [flow chart for a game of 20 questions](https://amyklipp.files.wordpress.com/2017/01/flow-chart-animals.jpg?w=620).
 
 <!-- TODO: image of decision tree -->
-<!-- example: https://amyklipp.files.wordpress.com/2017/01/flow-chart-animals.jpg?w=620 -->
 
-The decision tree / flow chart helps the guesser quickly narrow down options and arrive at a (hopefully) correct guess.
+A decision tree / flow chart helps to quickly narrow down options and arrive at a (hopefully) correct guess.
 
 If you take a look at the top of `model.py` you'll see that it's already using the `sklearn` library and importing the `tree` feature.
-
-# TODO: add machine learning variables here
 
 > [action]
 > In `model.py`, return to the `### MACHINE LEARNING MODEL VARIABLES ###` section, and on a new line underneath the two training data lists, add `model = tree.DecisionTreeClassifier()`
@@ -50,7 +47,7 @@ After the model has been trained, it adds some information to `training_summary`
 
 Re-run the program. If you have 1 or more lines of data in `samples.txt`, the model will be trained, and you'll now see the webpage update to indicate how many training samples you have for your emoji.
 
-<!-- TODO: image of seeing training data counts -->
+![training data counts](assets/training_data_counts.png "training data counts")
 
 With just a few more lines of code, we'll have the project start making predictions about the emoji being drawn!
 

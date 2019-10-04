@@ -40,9 +40,9 @@ We aren't using the helper officially yet, but we can still check that it's work
 
 First, expand the console by expanding the bottom panel of the results window.
 
-<!-- TODO: image of panel closed -->
+![python console closed](assets/python_console_closed.png "python console closed")
 
-<!-- TODO: image of panel open -->
+![python console open](assets/python_console_open.png "python console open")
 
 > [action]
 > In `model.py`, right below where you just added the `flatten_list(list_2d)` function, add the following code:
@@ -65,7 +65,7 @@ Python 3.7.4 (default, Jul  9 2019, 00:06:43)
 
 Once you have confirmed that it is working correctly, you can comment out or remove `example_list` and the print statements in `model.py`.
 
-<!-- TODO: image of panel with print statements -->
+![check flatten list](assets/check_flatten_list_console.png "check flatten list")
 
 # Prepare Data for Model Training
 
@@ -120,7 +120,7 @@ Until we complete the training step, we won't see the webpage update using the `
 
 Ensure that you have some data in `samples.txt` and re-run the program. Look in the python console to see if the print statement shows the correct number of samples.
 
-<!-- TODO: image of panel with print statements about sample counts -->
+![sample count in console](assets/sample_count_console.png "sample count in console")
 
 If you are satisfied that it's correct, you can remove or comment out the `print` statement.
 

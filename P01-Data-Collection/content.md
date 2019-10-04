@@ -22,7 +22,7 @@ Time to add a way for the user to indicate which emoji (**label**) they are draw
 
 Run the app again and you'll see that the display has changed. There's now a "Submit" button for the emoji you chose and places to display information about the *Training Data* and *Current Guess*.
 
-<!-- TODO: image of newly added emoji -->
+![first emoji added](assets/first_emoji_added.png "first emoji added")
 
 # Saving Samples
 

@@ -5,7 +5,7 @@ slug: getting-started
 
 <!-- ![hour of code tracking pixel](https://code.org/api/hour/begin_makeschool_wizard.png "Hour of Code Tracking Pixel") TODO-->
 
-<!-- ![code wizard castle cover image](assets/cover.png "code wizard castle cover image") TODO-->
+![finished project](assets/finished_project.png "finished Quick Draw Emoji project")
 
 This tutorial is a beginner-friendly introduction to the basics of Machine Learning.
 
@@ -53,7 +53,7 @@ Along the way and at the end of the tutorial, you can push yourself by tackling 
 
 By the end, you'll have your own live interactive Machine Learning website that you can show off to friends and family.
 
-<!-- ![screenshot of the final quick draw emoji project](assets/final_castle.png "Final Code Wizard Castle") TODO -->
+![finished project](assets/finished_project.png "finished Quick Draw Emoji project")
 
 # Accessing the Starter Project
 
@@ -83,7 +83,8 @@ When you first run the program you should see that right now it just has a simpl
 
 Try it out now - you can draw on and clear the canvas as much as you want.
 
-<!-- TODO: image of starter page -->
+![starter page](assets/starter_project.png "starter page")
+![hello world](assets/hello_world.png "hello world")
 
 When viewing the starter project, you should see the following file structure:
 
@@ -215,6 +216,6 @@ We're about to build out an awesome Machine Learning project that you can share 
 
 Re-run the program and see that your name now appears at the top.
 
-<!-- TODO: image of name added -->
+![name added](assets/name_added.png "name added")
 
 *PS - Don't worry, we'll be adding custom CSS later to improve the overall style of the webpage :)*

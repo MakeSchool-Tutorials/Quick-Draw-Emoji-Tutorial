@@ -5,7 +5,7 @@ slug: getting-started
 
 ![hour of code tracking pixel](https://code.org/api/hour/begin_makeschool_emoji.png "Hour of Code Tracking Pixel")
 
-![finished project](assets/finished_project.png "finished Quick Draw Emoji project")
+![finished project](assets/cover.png "cover image for Quick Draw Emoji project")
 
 This tutorial is a beginner-friendly introduction to the basics of Machine Learning.
 

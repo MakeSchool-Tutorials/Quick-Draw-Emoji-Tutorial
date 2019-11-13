@@ -3,7 +3,7 @@ title: "Getting Started"
 slug: getting-started
 ---
 
-<!-- ![hour of code tracking pixel](https://code.org/api/hour/begin_makeschool_wizard.png "Hour of Code Tracking Pixel") TODO-->
+![hour of code tracking pixel](https://code.org/api/hour/begin_makeschool_emoji.png "Hour of Code Tracking Pixel")
 
 ![finished project](assets/finished_project.png "finished Quick Draw Emoji project")
 

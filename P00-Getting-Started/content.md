@@ -57,7 +57,7 @@ By the end, you'll have your own live interactive Machine Learning website that 
 
 # Accessing the Starter Project
 
-Where will you actually write the code? There are two options for getting the starter project.
+Where will you actually write the code?
 
 <!-- ## Best Option - Use repl.it -->
 

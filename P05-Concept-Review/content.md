@@ -8,7 +8,7 @@ slug: concept-review
 It's working great, now let's make it look great with some extra polish.
 
 > [action]
-> In `model.py`, go back to `### CUSTOM DISPLAY VARIABLES ###`, and `use_stylesheet = True`
+> In `model.py`, go back to `### CUSTOM DISPLAY VARIABLES ###`, and add `use_stylesheet = True`
 
 Now the project will use `stylesheet.css` to apply more rules to the appearance of the webpage.
 

@@ -50,13 +50,13 @@ Re-run the program. You should now see a separate "Submit" button for each of yo
 Adding and training new emoji:
 
 ![more emoji added](assets/more_emoji_added.png "more emoji added")
-![train next emoji](assets/train_next_emoji.png "train next emoji")
 ![draw next emoji](assets/draw_next_emoji.png "draw next emoji")
+![train next emoji](assets/train_next_emoji.png "train next emoji")
 
 Live predictions change as the model trains on more and more diverse sample data:
 
 ![draw third emoji](assets/draw_third_emoji.png "draw third emoji")
-![draw third emoji 2](assets/draw_third_emoji_2.png "draw third emoji 2")
-![live prediction](assets/live_prediction_1.png "live prediction")
+<!-- ![draw third emoji 2](assets/draw_third_emoji_2.png "draw third emoji 2") -->
+<!-- ![live prediction](assets/live_prediction_1.png "live prediction") -->
 
 Are you feeling like a master of Machine Learning yet? 😎

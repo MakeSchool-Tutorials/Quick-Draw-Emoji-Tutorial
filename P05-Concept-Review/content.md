@@ -34,6 +34,13 @@ Want to view the full project solution?
 
 Best of luck in your future Machine Learning adventures!
 
+## Help Improve This Tutorial
+
+Please help us improve the tutorial by sharing your experience! :)
+
+[make.sc/hoc-emoji-feedback](http://make.sc/hoc-emoji-feedback)
+ 
+
 ## Further Resources
 
 These will help as you tackle the extra challenges below or head off into new programming territory to further grow your Machine Learning and overall programming skills.

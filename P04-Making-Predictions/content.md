@@ -56,7 +56,5 @@ Adding and training new emoji:
 Live predictions change as the model trains on more and more diverse sample data:
 
 ![draw third emoji](assets/draw_third_emoji.png "draw third emoji")
-<!-- ![draw third emoji 2](assets/draw_third_emoji_2.png "draw third emoji 2") -->
-<!-- ![live prediction](assets/live_prediction_1.png "live prediction") -->
 
 Are you feeling like a master of Machine Learning yet? 😎
